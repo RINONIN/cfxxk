@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <string>
+#include <string>//123456
 
 using namespace std;
 
@@ -12,5 +12,5 @@ int main()
     {
         cout << word << " ";
     }
-    cout << endl;
+    cout << endl; 
 }
