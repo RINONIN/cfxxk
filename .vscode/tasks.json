@@ -1,0 +1,30 @@
+{
+  "tasks": [
+      {
+          "type": "shell",
+          "label": "task g++",
+          "command": "F:\\code\\mingw64\\bin\\g++.exe",
+          "args": [
+              "-g",
+              "${file}",
+              "-o",
+              "${fileDirname}/${fileBasenameNoExtension}"
+          ],
+          "options": {
+              "cwd": "${workspaceFolder}"
+          },
+          "problemMatcher": [
+              "$gcc"
+          ],
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          },
+        
+          "presentation": { 
+              "panel": "new" //默认为“shared“表示共享，改成new之后每个进程创建新的端口
+          }
+      }
+  ],
+  "version": "2.0.0"
+}
