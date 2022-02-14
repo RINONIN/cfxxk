@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Python: 当前文件",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
       "name": "g++.exe build and debug active file",
       "type": "cppdbg",
       "request": "launch",
@@ -26,11 +33,13 @@
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
-      "args": [],
+      "args": [
+        ""
+      ],
       "stopAtEntry": false,
-      "cwd": "f:\\c++",
+      "cwd": "f:/c++",
       "environment": [],
-      "program": "f:\\c++\\build\\Debug\\outDebug",
+      "program": "f:/c++/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "F:\\code\\mingw64\\bin\\gdb.exe",
